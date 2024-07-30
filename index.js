@@ -69,7 +69,7 @@ app.post("/FetchData", (req, res) => {
   // console.log( "\n\n" + encodequery)
   // Remove /n from the query
   let sanitizedQuery = encodequery.replace(/\n/g, " ");
-  sanitizedQuery = sanitizedQuery.replace(/Table7/g, 'Banking');
+  sanitizedQuery = sanitizedQuery.replace(/Table7/g, '`test(1)`');
    console.log(  "\n\n" + sanitizedQuery);
 // Function to determine the type of SQL query
 function getQueryType(query) {
